@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Arial, sans-serif;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <style>
+      .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+      }
+
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-top: 2rem;
+      }
+
+      .card-header {
+        background-color: #f4f4f4;
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .card-body {
+        padding: 1rem;
+      }
+
+      .card-footer {
+        background-color: #f4f4f4;
+        padding: 1rem;
+        border-top: 1px solid #ccc;
+      }
+
+      .btn {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      #password {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="./src/PasswordGen.js"></script>
+  </body>
+</html>

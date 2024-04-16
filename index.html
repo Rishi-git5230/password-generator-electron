@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecurePass</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #securepass-logo {
+      display: block;
+    }
+    #loading-logo {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <img id="securepass-logo" src="./Common/logo_new.jpg" alt="SecurePass Logo">
+  <img id="loading-logo" src="./Common/load.gif" alt="Loading Logo">
+  <script>
+    setTimeout(() => {
+      document.getElementById('securepass-logo').style.display = 'none';
+      document.getElementById('loading-logo').style.display = 'block';
+      setTimeout(() => {
+        window.location.href = 'passwrd.html'; // Redirect to login page
+      }, 3000); // Display loading logo for 3 seconds
+    }, 3000); // Display securepass logo for 3 seconds
+  </script>
+</body>
+</html>
